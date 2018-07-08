@@ -2,20 +2,21 @@ body  {
 	margin: 0;
 
 }
-div.head
+div.header
 {
 	
    
     position: sticky;
     top: 0;
-	background: red;
+	background: whitesmoke;
 	color: white;
-	padding: 8px ;
+	padding: 2px ;
 	
 }
 
 nav {
 	width: 100%;
+    height: 65px;
 	/*background-color: #D2691E;*/
 }
 nav ul {
@@ -28,25 +29,104 @@ li {
     float: left;
 }
 
+.youtube {
+    height: 50px;
+    width: : 20px;
+    margin-top: -7px;
+
+}
+
 .align-right{
 	float: right;
+    padding: 4px;
+    margin: 2px;
 }
  nav ul form {
 	    display: block;
     position: relative;
     float: left;
 }
-input[type="text"] {
+
+/*input[type="text"] {
     margin-left:  400px;
+     padding: 2px;
+  font-size: 17px
+}
+*/
+/*button [type="submit"]{
+
+
+
+}*/
+
+
+.search {
+  width: 100%;
+  position: relative
 }
 
+.searchTerm {
+  float: left;
+  width: 100%;
+  color:  solid #212F3D  ;
+  padding: 5px;
+  height: 20px;
+  /*border-radius: 5px;*/
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 40px;
+  height: 35px;
+ color:  #5F6A6A;
+  background: #0b7dda;
+  text-align: center;
+  color: #fff;
+  /*border-radius: 5px;*/
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/**/
+/*.example button{
+     float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+*/
 
 .sidebar-panel {
     position:  fixed;
     display: block;
     margin: 0;
     padding:  0;
-    width: 200px;
+    width: 160px;
 	 background: #111; 
 	background: #eee;
     line-height: 24px;
@@ -62,7 +142,7 @@ input[type="text"] {
 }
 
 a.side-panel-link {
-    color:  #555;
+    color:  #0f0f0f;
     text-decoration:  none;
     display:  block;
     line-height: 24px;
@@ -74,10 +154,12 @@ a.side-panel-link {
 
 a.side-panel-link:hover {
     color: #888;
+
+
 }
 
 a.side-panel-link:hover {
-    color: #008000;
+    color: #12bd59;
 }
 
 p.panel-option-header {
@@ -89,14 +171,114 @@ p.panel-option-header {
     padding: 5px 15px;
 }
 
+
+
+
 .img {
 		 /*position:relative;*/
 
-	     left: 200px;
-	     top: 90px;
+	     margin-left: 175px;
+	     margin-top: 50px;
+         height: 1500px;
 	     
     /*border: 1px solid #73AD21;*/
 }
+
+
+/*.rec{
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+     letter-spacing:  2px;
+    font-size: 13px;
+    font-weight: 400;
+}*/
+.pic{
+
+    width: 24%;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    /*height: :30px;*/
+
+}
+
+
+/*.backgroun{
+    background-color: #f8f8fe;
+    margin-top: 0;
+
+}*/
+.photo{
+
+    width: 90%;
+    height: 180px;
+   
+}
+
+/*.photo img{
+    animation: 5s;
+}
+*/
+
+@keyframes slidy{
+
+    0%{
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    12%{
+        left: -100%;
+    }
+    22%{
+        left: -100%;    
+    }
+    24%{
+        left: -200%;
+    }
+    34%{
+        left: -200%;
+    }
+    36%{
+        left: -300%;
+    }
+    46%{
+        left: -300%;
+
+    }
+    48%{
+        left: -400%;
+    }
+
+    58%{
+        left: -400%;
+    }
+
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;   
+    }
+     72%{
+        left: -200%;   
+    }
+    82%{
+        left: -200%;
+    }
+    84%{
+        left: -100%;
+    }
+    94%{
+        left: -100%;
+    }
+    96%{
+        left: -0%;
+    }
+}
+
+
 
 /*
 .btn {
